@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61F82C85-E406-4F6E-BAA2-760269A8E47F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LevelTwo2</RootNamespace>
+    <AssemblyName>LevelTwo2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bossTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="destroyTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ghostMoveTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ghostTimers2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level2.Designer.cs">
+      <DependentUpon>level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lifeScoreTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayPause2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popUpBox2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popUpBox2.Designer.cs">
+      <DependentUpon>popUpBox2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="spellString.cs" />
+    <Compile Include="starAndScore2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="level2.resx">
+      <DependentUpon>level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popUpBox2.resx">
+      <DependentUpon>popUpBox2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1022x670.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicmp3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
